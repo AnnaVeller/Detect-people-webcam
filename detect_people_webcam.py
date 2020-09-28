@@ -79,7 +79,8 @@ def main():
     logger.debug("Запустили программу")
     known_faces = []
     pic, names = load_photo()
-    cap = cv2.VideoCapture(-1)
+    
+    cap = cv2.VideoCapture(0)
 
 
     i = 0
