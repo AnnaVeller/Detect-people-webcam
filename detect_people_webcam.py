@@ -108,7 +108,6 @@ def main():
         logger.debug("Ищем лица")
         face_locations = face_recognition.face_locations(rgb_frame, model="")
         face_landmarks_list = face_recognition.face_landmarks(rgb_frame)
-
         for i in range(len(face_locations)):
             draw_parts(i, frame, face_locations[i], face_landmarks_list)
             logger.debug("Нашли лицо")
