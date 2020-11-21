@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import cv2
 import face_recognition
 import logging
@@ -76,6 +79,7 @@ def main():
     logger.debug("Запустили программу")
     known_faces = []
     pic, names = load_photo()
+    
     cap = cv2.VideoCapture(0)
 
 
